@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "OpenCode TUI Style (127.0.0.1:49374)",
+  "version": "1.0.0",
+  "description": "在 http://127.0.0.1:49374 上注入 OpenCode 的 TUI 风格。",
+  "content_scripts": [
+    {
+      "matches": ["http://127.0.0.1/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
